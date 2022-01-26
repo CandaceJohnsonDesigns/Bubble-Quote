@@ -30,7 +30,7 @@ the toolbar will display a toggle button for text alignment, which also designat
 
 ![Alt text](/bubble-quote/assets/screenshot-1.jpg?raw=true "Right Aligned Tail/Citation")
 ![ScreenShot](https://raw.github.com/CandaceJohnsonDesigns/bubble-quote/master/assets/screenshot-1.png)
-![ScreenShot](assets/screenshot-1.png)
+![ScreenShot](/assets/screenshot-1.png)
 
 1. This screen shot description corresponds to screenshot-1.(png|jpg|jpeg|gif). Note that the screenshot is taken from
 the /assets directory or the directory that contains the stable readme.txt (tags or trunk). Screenshots in the /assets
