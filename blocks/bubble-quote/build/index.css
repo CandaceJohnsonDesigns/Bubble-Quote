@@ -5,7 +5,6 @@
  */
 .editor-styles-wrapper .wp-block-cjd-blocks-bubble-quote {
   padding: 0;
-  margin: 0;
 }
 .editor-styles-wrapper .wp-block-cjd-blocks-bubble-quote > * {
   margin-bottom: 0;
@@ -13,16 +12,17 @@
 .editor-styles-wrapper .wp-block-cjd-blocks-bubble-quote:before {
   content: none;
 }
-.editor-styles-wrapper .wp-block-cjd-blocks-bubble-quote[data-block]:not(.has-citation) {
-  margin-bottom: calc(var(--global--spacing-vertical) + 41px);
-}
-.editor-styles-wrapper .wp-block-cjd-blocks-bubble-quote[data-block].has-citation {
-  margin-bottom: 40px !important;
-}
 .editor-styles-wrapper .wp-block-cjd-blocks-bubble-quote .wp-block-cjd-blocks-bubble-quote__citation {
   display: block;
   position: relative;
   margin-top: 12px;
+}
+
+.editor-styles-wrapper .wp-block-column:not(.is-vertically-aligned-top):not(.is-vertically-aligned-center):not(.is-vertically-aligned-bottom) .wp-block-cjd-blocks-bubble-quote {
+  margin-bottom: 40px;
+}
+.editor-styles-wrapper .wp-block-column:not(.is-vertically-aligned-top):not(.is-vertically-aligned-center):not(.is-vertically-aligned-bottom) .wp-block-cjd-blocks-bubble-quote:not(.has-citation) {
+  margin-bottom: 32px;
 }
 
 /*# sourceMappingURL=index.css.map*/

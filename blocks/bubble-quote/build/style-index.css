@@ -6,7 +6,7 @@
  */
 .wp-block-cjd-blocks-bubble-quote {
   padding: 0;
-  margin: 0;
+  margin-bottom: 40px;
 }
 .wp-block-cjd-blocks-bubble-quote > * {
   margin-bottom: 0;
@@ -31,8 +31,8 @@
 .wp-block-cjd-blocks-bubble-quote.has-text-align-left cite {
   margin-left: calc(20px + 70px);
 }
-s .wp-block-cjd-blocks-bubble-quote:not(.has-citation) {
-  margin-bottom: 4em;
+.wp-block-cjd-blocks-bubble-quote:not(.has-citation) {
+  margin-bottom: 32px;
 }
 
 /*# sourceMappingURL=style-index.css.map*/
