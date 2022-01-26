@@ -1,0 +1,32 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.editor-styles-wrapper  {
+
+	.wp-block-cjd-blocks-bubble-quote {
+
+		padding: 0;
+		margin: 0;
+
+		&> * {
+			margin-bottom: 0;
+		}
+
+		&:before {
+			content: none;
+		}
+
+		&[data-block]:not(.has-citation) {
+			margin-bottom: calc(var(--global--spacing-vertical) + 41px);
+		}
+
+		.wp-block-cjd-blocks-bubble-quote__citation {
+			display: block;
+			position: relative;
+			margin-top: 12px;
+		}
+	}
+}

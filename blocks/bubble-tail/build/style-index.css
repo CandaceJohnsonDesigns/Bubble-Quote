@@ -1,0 +1,29 @@
+.bubble-tail {
+  position: absolute;
+  width: 100%;
+  padding-left: inherit;
+  padding-right: inherit;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.bubble-tail svg {
+  fill: currentColor;
+}
+.bubble-tail.has-left-tail {
+  text-align: left;
+  bottom: -40px;
+}
+.bubble-tail.has-left-tail svg {
+  transform: scaleX(-1);
+}
+.bubble-tail.has-center-tail {
+  text-align: center;
+  bottom: -36px;
+}
+.bubble-tail.has-right-tail {
+  text-align: right;
+  bottom: -40px;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

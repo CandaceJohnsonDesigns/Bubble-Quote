@@ -1,0 +1,48 @@
+{
+	"apiVersion": 2,
+	"name": "cjd-blocks/bubble-quote",
+	"version": "0.1.0",
+	"title": "Bubble Quote",
+	"category": "text",
+	"icon": "admin-comments",
+	"description": "Enhanced styling for a quote",
+	"attributes": {
+		"citation": {
+			"type": "string",
+			"source": "html",
+			"selector": "cite",
+			"default": "",
+			"__experimentalRole": "content"
+		},
+		"align": {
+			"type": "string",
+			"default": "right"
+		}
+	},
+  	"providesContext": {
+	  "cjd-blocks/tailAlign": "align"
+	},
+	"example": {
+		"attributes": {
+			"citation": "Your customer"
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"color": {
+			"link": true,
+			"background": false
+		}
+	},
+	"styles": [
+		{
+			"name": "default",
+			"label": "Default",
+			"isDefault": true
+		}
+	],
+	"textdomain": "cjd-blocks-bubble-quote",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

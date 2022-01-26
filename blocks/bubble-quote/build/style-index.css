@@ -1,0 +1,38 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-cjd-blocks-bubble-quote {
+  padding: 0;
+  margin: 0;
+}
+.wp-block-cjd-blocks-bubble-quote > * {
+  margin-bottom: 0;
+}
+.wp-block-cjd-blocks-bubble-quote:before {
+  content: none;
+}
+.wp-block-cjd-blocks-bubble-quote p {
+  font-weight: 400;
+  line-height: var(--wp--custom--line-height--medium);
+}
+.wp-block-cjd-blocks-bubble-quote cite {
+  display: block;
+  position: relative;
+  margin-top: 14px;
+  margin-top: 0.875rem;
+  font-size: var(--wp--preset--font-size--small);
+}
+.wp-block-cjd-blocks-bubble-quote.has-text-align-right cite {
+  margin-right: calc(20px + 70px);
+}
+.wp-block-cjd-blocks-bubble-quote.has-text-align-left cite {
+  margin-left: calc(20px + 70px);
+}
+s .wp-block-cjd-blocks-bubble-quote:not(.has-citation) {
+  margin-bottom: 4em;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

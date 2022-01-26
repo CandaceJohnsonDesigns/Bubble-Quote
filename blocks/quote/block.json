@@ -1,0 +1,60 @@
+{
+	"apiVersion": 2,
+	"name": "cjd-blocks/quote",
+	"title": "Bubble Quote - Inner Quote",
+	"version": "0.1.0",
+	"category": "text",
+	"parent": [ "cjd-blocks/bubble-quote" ],
+	"icon": "admin-comments",
+	"description": "Standalone Quote",
+	"attributes": {
+		"value": {
+			"type": "string",
+			"source": "html",
+			"selector": "div",
+			"multiline": "p",
+			"default": "",
+			"__experimentalRole": "content"
+		},
+		"tailAlign": {
+			"type": "string"
+		},
+		"align": {
+			"type": "string",
+			"default": "center"
+		},
+		"backgroundColor": {
+			"type": "string"
+		}
+	},
+  	"providesContext": {
+		"cjd-blocks/tailColor": "backgroundColor"
+  	},
+	"example": {
+		"attributes": {
+			"value": "Quotes help us understand, inspire, motivate, clarify and show our approach to things around, this is why people and I love quotes.",
+			"backgroundColor": "ch-blue"
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"color": {
+			"link": true
+		},
+		"spacing": {
+			"padding": true
+		}
+	},
+	"styles": [
+		{
+			"name": "default",
+			"label": "Default",
+			"isDefault": true
+		},
+		{ "name": "drop-shadow", "label": "Drop Shadow"}
+	],
+	"textdomain": "cjd-blocks-quote",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

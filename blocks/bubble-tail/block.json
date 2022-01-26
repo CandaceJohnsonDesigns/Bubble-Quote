@@ -1,0 +1,26 @@
+{
+  "apiVersion": 2,
+  "name": "cjd-blocks/bubble-tail",
+  "version": "0.1.0",
+  "title": "Bubble Tail",
+  "category": "text",
+  "icon": "admin-comments",
+  "description": "A bubble tail that inherits alignment attributes",
+  "usesContext": [ "cjd-blocks/tailAlign", "cjd-blocks/tailColor" ],
+  "attributes": {
+	"tailAlign": {
+	  "type": "string"
+	}
+  },
+  "parent": [ "cjd-blocks/quote" ],
+  "supports": {
+	"anchor": false,
+	"color": {
+	  "background": false
+	}
+  },
+  "textdomain": "cjd-blocks-bubble-tail",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css"
+}

@@ -1,0 +1,31 @@
+{
+	"name": "bubble-quote",
+	"version": "0.1.0",
+	"description": "An enhanced quote block with special emphasis on the quote.",
+	"author": "The WordPress Contributors",
+	"license": "GPL-2.0-or-later",
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"start": "wp-scripts start",
+		"packages-update": "wp-scripts packages-update",
+		"start:bubble-quote": "wp-scripts start blocks/bubble-quote/src/index.js --output-path=blocks/bubble-quote/build/",
+		"build:bubble-quote": "wp-scripts build blocks/bubble-quote/src/index.js --output-path=blocks/bubble-quote/build/",
+		"start:quote": "wp-scripts start blocks/quote/src/index.js --output-path=blocks/quote/build/",
+		"build:quote": "wp-scripts build blocks/quote/src/index.js --output-path=blocks/quote/build/",
+	  "start:bubble-tail": "wp-scripts start blocks/bubble-tail/src/index.js --output-path=blocks/bubble-tail/build/",
+	  "build:bubble-tail": "wp-scripts build blocks/bubble-tail/src/index.js --output-path=blocks/bubble-tail/build/"
+	},
+	"dependencies": {
+		"@wordpress/block-editor": "^7.0.0",
+		"@wordpress/blocks": "^11.0.0",
+		"@wordpress/i18n": "^4.2.1",
+		"classnames": "^2.3.1"
+	},
+	"devDependencies": {
+		"@wordpress/scripts": "^17.1.0"
+	}
+}
