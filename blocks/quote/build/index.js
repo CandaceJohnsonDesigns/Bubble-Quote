@@ -249,6 +249,7 @@ function QuoteEdit({
   const blockProps = Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__["useBlockProps"])({
     className: classNames
   });
+  const useInnerBlocksProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__["useInnerBlocksProps"] ? _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__["useInnerBlocksProps"] : _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__["__experimentalUseInnerBlocksProps"];
   const ALLOWED_BLOCKS = ['cjd-blocks/bubble-tail', 'core/paragraph'];
   const TEMPLATE = [['cjd-blocks/bubble-tail', {}, 'core/paragraph', {
     content: "I'm an inner paragraph."
@@ -256,7 +257,7 @@ function QuoteEdit({
   const {
     children,
     ...innerBlocksProps
-  } = Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__["useInnerBlocksProps"])(blockProps, {
+  } = useInnerBlocksProps(blockProps, {
     allowedBlocks: ALLOWED_BLOCKS,
     template: TEMPLATE,
     templateLock: "all"

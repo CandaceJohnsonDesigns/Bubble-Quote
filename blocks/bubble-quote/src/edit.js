@@ -14,7 +14,8 @@
 	 InnerBlocks,
 	 RichText,
 	 useBlockProps,
-	 useInnerBlocksProps
+	 useInnerBlocksProps as __stableUseInnerBlocksProps,
+     __experimentalUseInnerBlocksProps
  } from '@wordpress/block-editor';
  import { BlockQuotation } from '@wordpress/components';
  import { createBlock } from '@wordpress/blocks';
@@ -61,6 +62,10 @@ import { BlockQuote } from './blockquote';
 				[`has-citation`] : citation
 			}
 		);
+
+	const useInnerBlocksProps = __stableUseInnerBlocksProps
+    		? __stableUseInnerBlocksProps
+    		: __experimentalUseInnerBlocksProps;
 
 	const blockProps = useBlockProps( {
 		className: className,

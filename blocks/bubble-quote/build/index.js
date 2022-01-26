@@ -263,13 +263,14 @@ function BubbleQuoteEdit({
     [`has-text-align-${align}`]: align,
     [`has-citation`]: citation
   });
+  const useInnerBlocksProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__["useInnerBlocksProps"] ? _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__["useInnerBlocksProps"] : _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__["__experimentalUseInnerBlocksProps"];
   const blockProps = Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__["useBlockProps"])({
     className: className
   });
   const {
     children,
     ...innerBlocksProps
-  } = Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__["useInnerBlocksProps"])(blockProps, {
+  } = useInnerBlocksProps(blockProps, {
     allowedBlocks: ALLOWED_BLOCKS,
     template: TEMPLATE,
     templateLock: "all"

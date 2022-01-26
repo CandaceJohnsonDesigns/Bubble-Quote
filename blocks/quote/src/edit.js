@@ -13,7 +13,8 @@
 	 BlockControls,
 	 RichText,
 	 useBlockProps,
-	 useInnerBlocksProps,
+	 useInnerBlocksProps as __stableUseInnerBlocksProps,
+     __experimentalUseInnerBlocksProps,
 	 getColorClassName
  } from '@wordpress/block-editor';
  import { createBlock } from '@wordpress/blocks';
@@ -56,6 +57,10 @@ import icons from './icons.js';
 	const blockProps = useBlockProps( {
     		className: classNames,
     	} );
+
+    const useInnerBlocksProps = __stableUseInnerBlocksProps
+    	? __stableUseInnerBlocksProps
+        : __experimentalUseInnerBlocksProps;
 
     const ALLOWED_BLOCKS = [ 'cjd-blocks/bubble-tail', 'core/paragraph' ];
 
