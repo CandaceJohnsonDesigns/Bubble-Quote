@@ -23,6 +23,10 @@
 			margin-bottom: calc(var(--global--spacing-vertical) + 41px);
 		}
 
+		&[data-block].has-citation {
+			margin-bottom: 40px !important;
+		}
+
 		.wp-block-cjd-blocks-bubble-quote__citation {
 			display: block;
 			position: relative;

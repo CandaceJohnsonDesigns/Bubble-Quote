@@ -1,1 +1,1 @@
-{"version":3,"sources":["webpack:///./blocks/quote/src/editor.scss"],"names":[],"mappings":"AAAA;EACC;AACD,C","file":"index.css","sourcesContent":[".editor-styles-wrapper [data-block].wp-block-cjd-blocks-quote {\n\tmargin-bottom: 0;\n}\n"],"sourceRoot":""}
+{"version":3,"sources":["webpack:///./blocks/quote/src/editor.scss"],"names":[],"mappings":"AACC;EACC;EACA;AAAF,C","file":"index.css","sourcesContent":[".editor-styles-wrapper {\n\t[data-block].wp-block-cjd-blocks-quote {\n\t\tmargin-top: 0;\n\t\tmargin-bottom: 0;\n\t}\n}\n"],"sourceRoot":""}
