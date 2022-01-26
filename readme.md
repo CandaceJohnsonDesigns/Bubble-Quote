@@ -32,8 +32,6 @@ the toolbar will display a toggle button for text alignment, which also designat
 
 Right Aligned Tail/Citation Bubble Quote
 
-3. This is the second screen shot
-
 == Changelog ==
 
 = 0.1.0 =
