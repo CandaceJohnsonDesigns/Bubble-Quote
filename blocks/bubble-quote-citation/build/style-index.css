@@ -1,0 +1,12 @@
+.wp-block-cjd-blocks-bubble-quote-citation {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.has-text-align-right .wp-block-cjd-blocks-bubble-quote-citation {
+  padding-right: calc( 20px + 70px);
+}
+.has-text-align-left .wp-block-cjd-blocks-bubble-quote-citation {
+  padding-left: calc( 20px + 70px);
+}
+
+/*# sourceMappingURL=style-index.css.map*/
