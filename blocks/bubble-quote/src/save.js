@@ -4,24 +4,25 @@
  import classnames from 'classnames';
 
  /**
+  * Internal dependencies
+  */
+ import { BlockQuote } from './blockquote';
+
+ /**
   * WordPress dependencies
   */
- import { InnerBlocks, RichText, useBlockProps } from '@wordpress/block-editor';
+ import { useBlockProps, useInnerBlocksProps } from '@wordpress/block-editor';
 
  export default function save( { attributes } ) {
-	 const { align, citation } = attributes;
+	 const { align } = attributes;
 
 	 const className = classnames( {
 		 [ `has-text-align-${ align }` ]: align,
-		 [ `has-citation` ]: citation,
 	 } );
 
+	 const innerBlocksProps = useInnerBlocksProps.save( useBlockProps.save( { className: className, } ) );
+
 	 return (
-		 <blockquote { ...useBlockProps.save( { className } ) }>
-			 <InnerBlocks.Content />
-			 { ! RichText.isEmpty( citation ) && (
-				 <RichText.Content tagName="cite" value={ citation } />
-			 ) }
-		 </blockquote>
+		 <BlockQuote { ...innerBlocksProps } />
 	 );
  }

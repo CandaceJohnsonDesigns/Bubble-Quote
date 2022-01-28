@@ -4,38 +4,3 @@
  * Replace them with your own styles or remove the file completely.
  */
 
-.editor-styles-wrapper  {
-
-	.wp-block-cjd-blocks-bubble-quote {
-
-		padding: 0;
-
-		&> * {
-			margin-bottom: 0;
-		}
-
-		&:before {
-			content: none;
-		}
-
-		.wp-block-cjd-blocks-bubble-quote__citation {
-			display: block;
-			position: relative;
-			margin-top: 12px;
-		}
-	}
-}
-
-.editor-styles-wrapper {
-	.wp-block-column {
-		&:not(.is-vertically-aligned-top):not(.is-vertically-aligned-center):not(.is-vertically-aligned-bottom) {
-			.wp-block-cjd-blocks-bubble-quote {
-	 			margin-bottom: 40px;
-
-	 			&:not(.has-citation) {
-	 				margin-bottom: 32px;
-	 			}
-			}
-		}
-	}
-}

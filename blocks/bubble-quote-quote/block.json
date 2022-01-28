@@ -1,0 +1,40 @@
+{
+	"apiVersion": 2,
+	"name": "cjd-blocks/bubble-quote-quote",
+	"title": "Bubble Quote -- Quote",
+	"version": "0.1.0",
+	"category": "text",
+	"parent": [ "cjd-blocks/bubble-quote-inner-container" ],
+	"icon": "text",
+	"description": "Standalone Quote",
+	"attributes": {
+		"content": {
+			"type": "string",
+			"source": "html",
+			"selector": ".wp-block-cjd-blocks-bubble-quote-quote",
+			"multiline": "p",
+		  	"__unstableMultilineWrapperTags": [ "div" ],
+			"default": "",
+			"__experimentalRole": "content"
+		}
+	},
+	"supports": {
+		"anchor": true,
+		"color": {
+			"link": true,
+			"background": false
+		},
+	  	"spacing": {
+		  "padding": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true
+	  	},
+	  	"reusable": false
+	},
+	"textdomain": "cjd-blocks-quote",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

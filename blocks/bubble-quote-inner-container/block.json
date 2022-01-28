@@ -1,0 +1,38 @@
+{
+	"apiVersion": 2,
+	"name": "cjd-blocks/bubble-quote-inner-container",
+	"title": "Bubble Quote -- Inner Container",
+	"version": "0.1.0",
+	"category": "text",
+	"parent": [ "cjd-blocks/bubble-quote" ],
+	"icon": "testimonial",
+	"description": "Quote Container",
+	"attributes": {
+		"backgroundColor": {
+			"type": "string"
+		}
+	},
+  	"providesContext": {
+		"cjd-blocks/tailColor": "backgroundColor"
+  	},
+	"supports": {
+		"anchor": true,
+		"color": {
+		  	"text": false,
+			"background": true
+		},
+	  	"reusable": false
+	},
+	"styles": [
+		{
+			"name": "default",
+			"label": "Default",
+			"isDefault": true
+		},
+		{ "name": "drop-shadow", "label": "Drop Shadow"}
+	],
+	"textdomain": "cjd-blocks-quote-container",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

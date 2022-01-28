@@ -7,12 +7,11 @@
 
  .wp-block-cjd-blocks-bubble-quote {
 	padding: 0;
-	margin-bottom: 40px;
+	margin: 0;
 
 	&> * {
 		margin-bottom: 0;
 	}
-
 
 	&:before {
 		content: none;
@@ -21,29 +20,5 @@
 	p {
 		font-weight: 400;
 		line-height: var(--wp--custom--line-height--medium);
-	}
-
-	cite {
-		display: block;
-		position: relative;
-		margin-top: 14px;
-		margin-top: .875rem;
-		font-size: var(--wp--preset--font-size--small);
-	}
-
-	&.has-text-align-right {
-		cite {
-			margin-right: calc(20px + 70px);
-		}
-	}
-
-	&.has-text-align-left {
-		cite {
-			margin-left: calc(20px + 70px);
-		}
-	}
-
-	&:not(.has-citation) {
-		margin-bottom: 32px;
 	}
 }

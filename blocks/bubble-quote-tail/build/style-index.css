@@ -1,0 +1,31 @@
+.wp-block-cjd-blocks-bubble-quote-tail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.wp-block-cjd-blocks-bubble-quote-tail svg {
+  position: relative;
+  fill: currentColor;
+  transform: translateY(-2px);
+}
+.wp-block-cjd-blocks-bubble-quote-tail.has-left-tail {
+  text-align: left;
+}
+.wp-block-cjd-blocks-bubble-quote-tail.has-left-tail svg {
+  transform: translateY(-2px) scaleX(-1);
+}
+.wp-block-cjd-blocks-bubble-quote-tail.has-center-tail {
+  text-align: center;
+}
+.wp-block-cjd-blocks-bubble-quote-tail.has-center-tail svg {
+  transform: translateY(-24px);
+}
+.wp-block-cjd-blocks-bubble-quote-tail.has-right-tail {
+  text-align: right;
+}
+
+/*# sourceMappingURL=style-index.css.map*/

@@ -1,19 +1,20 @@
 {
 	"apiVersion": 2,
-	"name": "cjd-blocks/bubble-quote",
+	"name": "cjd-blocks/bubble-quote-citation",
 	"version": "0.1.0",
-	"title": "Bubble Quote",
+	"title": "Bubble Quote -- Citation",
 	"category": "text",
-	"icon": "admin-comments",
-	"description": "Enhanced styling for a quote",
+	"icon": "text",
+  	"parent": [ "cjd-blocks/bubble-quote" ],
+	"description": "The citation for the bubble quote",
 	"attributes": {
-		"align": {
+		"citation": {
 			"type": "string",
-			"default": "right"
+			"source": "html",
+			"selector": "cite",
+			"default": "",
+			"__experimentalRole": "content"
 		}
-	},
-  	"providesContext": {
-	  "cjd-blocks/tailAlign": "align"
 	},
 	"example": {
 		"attributes": {
@@ -25,16 +26,10 @@
 		"color": {
 			"link": true,
 			"background": false
-		}
+		},
+	  	"reusable": false
 	},
-	"styles": [
-		{
-			"name": "default",
-			"label": "Default",
-			"isDefault": true
-		}
-	],
-	"textdomain": "cjd-blocks-bubble-quote",
+	"textdomain": "cjd-blocks-citation",
 	"editorScript": "file:./build/index.js",
 	"editorStyle": "file:./build/index.css",
 	"style": "file:./build/style-index.css"

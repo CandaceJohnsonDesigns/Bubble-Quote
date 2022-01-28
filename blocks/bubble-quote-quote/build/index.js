@@ -1,9 +1,9 @@
 (window["webpackJsonp_bubble_quote"] = window["webpackJsonp_bubble_quote"] || []).push([["style-index"],{
 
-/***/ "./blocks/bubble-quote/src/style.scss":
-/*!********************************************!*\
-  !*** ./blocks/bubble-quote/src/style.scss ***!
-  \********************************************/
+/***/ "./blocks/bubble-quote-quote/src/style.scss":
+/*!**************************************************!*\
+  !*** ./blocks/bubble-quote-quote/src/style.scss ***!
+  \**************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -166,53 +166,39 @@ __webpack_require__.r(__webpack_exports__);
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./blocks/bubble-quote/src/index.js","style-index"]);
+/******/ 	deferredModules.push(["./blocks/bubble-quote-quote/src/index.js","style-index"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./blocks/bubble-quote/src/blockquote.js":
+/***/ "./blocks/bubble-quote-quote/src/edit.js":
 /*!***********************************************!*\
-  !*** ./blocks/bubble-quote/src/blockquote.js ***!
+  !*** ./blocks/bubble-quote-quote/src/edit.js ***!
   \***********************************************/
-/*! exports provided: BlockQuote */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockQuote", function() { return BlockQuote; });
-const BlockQuote = 'blockquote';
-
-/***/ }),
-
-/***/ "./blocks/bubble-quote/src/edit.js":
-/*!*****************************************!*\
-  !*** ./blocks/bubble-quote/src/edit.js ***!
-  \*****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return BubbleQuoteEdit; });
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
-/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
-/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
-/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/data */ "@wordpress/data");
-/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_data__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
-/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Edit; });
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js");
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
+/* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/data */ "@wordpress/data");
+/* harmony import */ var _wordpress_data__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_data__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./editor.scss */ "./blocks/bubble-quote/src/editor.scss");
-/* harmony import */ var _blockquote__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./blockquote */ "./blocks/bubble-quote/src/blockquote.js");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./editor.scss */ "./blocks/bubble-quote-quote/src/editor.scss");
+
 
 
 /**
@@ -227,13 +213,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-const isWebPlatform = _wordpress_element__WEBPACK_IMPORTED_MODULE_0__["Platform"].OS === 'web';
 /**
  * Internal dependencies
  */
-
 
 
 /**
@@ -245,32 +227,31 @@ const isWebPlatform = _wordpress_element__WEBPACK_IMPORTED_MODULE_0__["Platform"
  * @return {WPElement} Element to render.
  */
 
-function BubbleQuoteEdit({
-  clientId,
+function Edit({
   attributes,
   setAttributes,
-  isSelected,
-  insertBlocksAfter
+  mergeBlocks,
+  onReplace,
+  clientId
 }) {
   const {
-    align
+    align,
+    content
   } = attributes;
-  const ALLOWED_BLOCKS = ['cjd-blocks/bubble-quote-inner-container', 'cjd-blocks/bubble-quote-citation'];
-  const TEMPLATE = [['cjd-blocks/bubble-quote-inner-container', {}], ['cjd-blocks/bubble-quote-citation', {}]];
-  const className = classnames__WEBPACK_IMPORTED_MODULE_1___default()({
+  const classNames = classnames__WEBPACK_IMPORTED_MODULE_2___default()({
     [`has-text-align-${align}`]: align
   });
-  const blockProps = Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__["useBlockProps"])({
-    className: className
+  const blockProps = Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["useBlockProps"])({
+    className: classNames
   });
-  const innerBlocksProps = Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__["useInnerBlocksProps"])(blockProps, {
-    allowedBlocks: ALLOWED_BLOCKS,
-    template: TEMPLATE,
-    templateLock: "all"
-  });
-  const controls = Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__["BlockControls"], {
+
+  const controls = ({
+    value,
+    onChange,
+    onFocus
+  }) => Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["BlockControls"], {
     group: "block"
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_4__["AlignmentControl"], {
+  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["AlignmentControl"], {
     value: align,
     onChange: nextAlign => {
       setAttributes({
@@ -278,15 +259,32 @@ function BubbleQuoteEdit({
       });
     }
   })));
-  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, controls, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_blockquote__WEBPACK_IMPORTED_MODULE_8__["BlockQuote"], innerBlocksProps));
+
+  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["Fragment"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_5__["RichText"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({
+    multiline: "p",
+    onChange: nextContent => setAttributes({
+      content: nextContent
+    }),
+    value: content,
+    onMerge: mergeBlocks,
+    "aria-label": Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__["__"])('Quote text'),
+    placeholder: // translators: placeholder text used for the quote
+    Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__["__"])('Add quote'),
+    onReplace: onReplace,
+    onSplit: value => Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_6__["createBlock"])('cjd-blocks/quote', { ...attributes,
+      content: value
+    }),
+    __unstableOnSplitMiddle: () => Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_6__["createBlock"])('core/paragraph'),
+    textAlign: align
+  }, blockProps), controls));
 }
 
 /***/ }),
 
-/***/ "./blocks/bubble-quote/src/editor.scss":
-/*!*********************************************!*\
-  !*** ./blocks/bubble-quote/src/editor.scss ***!
-  \*********************************************/
+/***/ "./blocks/bubble-quote-quote/src/editor.scss":
+/*!***************************************************!*\
+  !*** ./blocks/bubble-quote-quote/src/editor.scss ***!
+  \***************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -297,10 +295,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./blocks/bubble-quote/src/index.js":
-/*!******************************************!*\
-  !*** ./blocks/bubble-quote/src/index.js ***!
-  \******************************************/
+/***/ "./blocks/bubble-quote-quote/src/index.js":
+/*!************************************************!*\
+  !*** ./blocks/bubble-quote-quote/src/index.js ***!
+  \************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -310,9 +308,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.scss */ "./blocks/bubble-quote/src/style.scss");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./edit */ "./blocks/bubble-quote/src/edit.js");
-/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./save */ "./blocks/bubble-quote/src/save.js");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.scss */ "./blocks/bubble-quote-quote/src/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./edit */ "./blocks/bubble-quote-quote/src/edit.js");
+/* harmony import */ var _save__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./save */ "./blocks/bubble-quote-quote/src/save.js");
 /**
  * WordPress dependencies
  */
@@ -331,24 +329,30 @@ __webpack_require__.r(__webpack_exports__);
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 
-Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('cjd-blocks/bubble-quote', {
+Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_1__["registerBlockType"])('cjd-blocks/bubble-quote-quote', {
+  example: {
+    attributes: {
+      value: '<p>' + Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_0__["__"])('I\'m great for testimonials!') + '</p>'
+    }
+  },
+
   /**
    * @see ./edit.js
    */
   edit: _edit__WEBPACK_IMPORTED_MODULE_3__["default"],
 
   /**
-  * @see ./save.js
-  */
+   * @see ./save.js
+   */
   save: _save__WEBPACK_IMPORTED_MODULE_4__["default"]
 });
 
 /***/ }),
 
-/***/ "./blocks/bubble-quote/src/save.js":
-/*!*****************************************!*\
-  !*** ./blocks/bubble-quote/src/save.js ***!
-  \*****************************************/
+/***/ "./blocks/bubble-quote-quote/src/save.js":
+/*!***********************************************!*\
+  !*** ./blocks/bubble-quote-quote/src/save.js ***!
+  \***********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -359,9 +363,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! classnames */ "./node_modules/classnames/index.js");
 /* harmony import */ var classnames__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(classnames__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _blockquote__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./blockquote */ "./blocks/bubble-quote/src/blockquote.js");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__);
 
 
 /**
@@ -369,29 +376,71 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 /**
- * Internal dependencies
- */
-
-
-/**
  * WordPress dependencies
  */
 
+
+
+
+/**
+ * The save function defines the way in which the different attributes should
+ * be combined into the final markup, which is then serialized by the block
+ * editor into `post_content`.
+ *
+ * @see https://developer.wordpress.org/block-editor/developers/block-api/block-edit-save/#save
+ *
+ * @return {WPElement} Element to render.
+ */
 
 function save({
   attributes
 }) {
   const {
-    align
+    align,
+    content
   } = attributes;
-  const className = classnames__WEBPACK_IMPORTED_MODULE_1___default()({
+  const classNames = classnames__WEBPACK_IMPORTED_MODULE_1___default()({
     [`has-text-align-${align}`]: align
   });
-  const innerBlocksProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useInnerBlocksProps"].save(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"].save({
-    className: className
+  const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"].save({
+    className: classNames
+  });
+  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", blockProps, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"].Content, {
+    value: content,
+    multiline: "p"
   }));
-  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_blockquote__WEBPACK_IMPORTED_MODULE_2__["BlockQuote"], innerBlocksProps);
 }
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/extends.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/extends.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+function _extends() {
+  module.exports = _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  module.exports["default"] = module.exports, module.exports.__esModule = true;
+  return _extends.apply(this, arguments);
+}
+
+module.exports = _extends;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
 
 /***/ }),
 

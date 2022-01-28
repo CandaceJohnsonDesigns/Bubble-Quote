@@ -1,0 +1,31 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .wp-block-cjd-blocks-bubble-quote-inner-container {
+	position: relative;
+	border-radius: 10px;
+    flex-grow: 1;
+
+    &[class*=inner-container] > * {
+    	margin: 0;
+    }
+
+    // Aligns citation to tail
+    .wp-block-cjd-blocks-bubble-quote & {
+    	margin-bottom: 8px;
+    }
+
+	&.is-style-drop-shadow {
+		filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.075))
+				drop-shadow(0 1px 2px rgb(0 0 0 / 0.4));
+	}
+
+	// Default background color
+	&:not(.has-background) {
+    	background-color: var(--wp--preset--color--white);
+    }
+}

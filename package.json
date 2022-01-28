@@ -14,10 +14,14 @@
 		"packages-update": "wp-scripts packages-update",
 		"start:bubble-quote": "wp-scripts start blocks/bubble-quote/src/index.js --output-path=blocks/bubble-quote/build/",
 		"build:bubble-quote": "wp-scripts build blocks/bubble-quote/src/index.js --output-path=blocks/bubble-quote/build/",
-		"start:quote": "wp-scripts start blocks/quote/src/index.js --output-path=blocks/quote/build/",
-		"build:quote": "wp-scripts build blocks/quote/src/index.js --output-path=blocks/quote/build/",
-	  "start:bubble-tail": "wp-scripts start blocks/bubble-tail/src/index.js --output-path=blocks/bubble-tail/build/",
-	  "build:bubble-tail": "wp-scripts build blocks/bubble-tail/src/index.js --output-path=blocks/bubble-tail/build/"
+		"start:quote": "wp-scripts start blocks/bubble-quote-quote/src/index.js --output-path=blocks/bubble-quote-quote/build/",
+		"build:quote": "wp-scripts build blocks/bubble-quote-quote/src/index.js --output-path=blocks/bubble-quote-quote/build/",
+		"start:quote-container": "wp-scripts start blocks/bubble-quote-inner-container/src/index.js --output-path=blocks/bubble-quote-inner-container/build/",
+		"build:quote-container": "wp-scripts build blocks/bubble-quote-inner-container/src/index.js --output-path=blocks/bubble-quote-inner-container/build/",
+		"start:citation": "wp-scripts start blocks/bubble-quote-citation/src/index.js --output-path=blocks/bubble-quote-citation/build/",
+		"build:citation": "wp-scripts build blocks/bubble-quote-citation/src/index.js --output-path=blocks/bubble-quote-citation/build/",
+		"start:bubble-tail": "wp-scripts start blocks/bubble-quote-tail/src/index.js --output-path=blocks/bubble-quote-tail/build/",
+		"build:bubble-tail": "wp-scripts build blocks/bubble-quote-tail/src/index.js --output-path=blocks/bubble-quote-tail/build/"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "^7.0.0",

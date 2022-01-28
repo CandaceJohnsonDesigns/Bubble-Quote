@@ -14,8 +14,7 @@
 	 InnerBlocks,
 	 RichText,
 	 useBlockProps,
-	 useInnerBlocksProps as __stableUseInnerBlocksProps,
-     __experimentalUseInnerBlocksProps
+	 useInnerBlocksProps
  } from '@wordpress/block-editor';
  import { BlockQuotation } from '@wordpress/components';
  import { createBlock } from '@wordpress/blocks';
@@ -44,34 +43,27 @@ import { BlockQuote } from './blockquote';
 	isSelected,
 	insertBlocksAfter,
 } ) {
-	const { align, citation } = attributes;
+	const { align } = attributes;
 
-	const ALLOWED_BLOCKS = [ 'cjd-blocks/quote' ];
+	const ALLOWED_BLOCKS = [ 'cjd-blocks/bubble-quote-inner-container', 'cjd-blocks/bubble-quote-citation' ];
 
 	const TEMPLATE = [
-		[ 'cjd-blocks/quote', { }]
+		[ 'cjd-blocks/bubble-quote-inner-container', { } ],
+		[ 'cjd-blocks/bubble-quote-citation', {} ]
 	];
-
-	const isParentofSelectedBlock = useSelect( ( select ) =>
-		select( 'core/block-editor' ).hasSelectedInnerBlock( clientId, true ) );
 
 	const className =
 		classnames(
 			{
 				[`has-text-align-${ align }`] : align,
-				[`has-citation`] : citation
 			}
 		);
-
-	const useInnerBlocksProps = __stableUseInnerBlocksProps
-    		? __stableUseInnerBlocksProps
-    		: __experimentalUseInnerBlocksProps;
 
 	const blockProps = useBlockProps( {
 		className: className,
 	} );
 
-	const { children, ...innerBlocksProps } = useInnerBlocksProps( blockProps, {
+	const innerBlocksProps = useInnerBlocksProps( blockProps, {
 		allowedBlocks: ALLOWED_BLOCKS,
 		template: TEMPLATE,
         templateLock: "all"
@@ -93,33 +85,7 @@ import { BlockQuote } from './blockquote';
 	return (
 		<>
 			{ controls }
-			<BlockQuote { ...innerBlocksProps } >
-				{ children }
-				{ ( ! RichText.isEmpty( citation ) || isSelected || isParentofSelectedBlock ) && (
-					<RichText
-						identifier="citation"
-						tagName={ isWebPlatform ? 'cite' : undefined }
-						style={ { display: 'block' } }
-						value={ citation }
-						onChange={ ( nextCitation ) =>
-							setAttributes( {
-								citation: nextCitation,
-							} )
-						}
-						__unstableMobileNoFocusOnMount
-						aria-label={ __( 'Quote citation text' ) }
-						placeholder={
-							// translators: placeholder text used for the citation
-							__( 'Add citation' )
-						}
-						textAlign={ align }
-						className="wp-block-cjd-bubble-quote__citation"
-						__unstableOnSplitAtEnd={ () =>
-							insertBlocksAfter( createBlock( 'core/paragraph' ) )
-						}
-					/>
-				) }
-			</BlockQuote>
+			<BlockQuote { ...innerBlocksProps } />
 		</>
 	);
 }

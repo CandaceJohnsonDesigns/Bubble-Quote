@@ -22,28 +22,30 @@
  */
 function cjd_blocks_bubble_quote_block_init() {
 	// automatically load dependencies and version
-        $asset_file = include( plugin_dir_path( __FILE__ ) . 'blocks/bubble-tail/build/index.asset.php');
+        $asset_file = include( plugin_dir_path( __FILE__ ) . 'blocks/bubble-quote-tail/build/index.asset.php');
 
         wp_register_script(
-        	'cjd-blocks-bubble-tail',
-        	plugins_url( 'blocks/bubble-tail/build/index.js', __FILE__ ),
+        	'cjd-blocks-bubble-quote-tail',
+        	plugins_url( 'blocks/bubble-quote-tail/build/index.js', __FILE__ ),
         	$asset_file['dependencies'],
         	$asset_file['version']
         );
 
         register_block_type(
-        	plugin_dir_path( __FILE__ ) . 'blocks/bubble-tail/',
+        	plugin_dir_path( __FILE__ ) . 'blocks/bubble-quote-tail/',
         	array(
         		'api_version' => 2,
-        		'editor_script' => 'cjd-blocks-bubble-tail',
-        		'render_callback' => 'render_cjd_blocks_bubble_tail'
+        		'editor_script' => 'cjd-blocks-bubble-quote-tail',
+        		'render_callback' => 'render_cjd_blocks_bubble_quote_tail'
         	)
         );
 
-	register_block_type( plugin_dir_path( __FILE__ ) . 'blocks/quote/' );
+	register_block_type( plugin_dir_path( __FILE__ ) . 'blocks/bubble-quote-citation/' );
+	register_block_type( plugin_dir_path( __FILE__ ) . 'blocks/bubble-quote-quote/' );
+	register_block_type( plugin_dir_path( __FILE__ ) . 'blocks/bubble-quote-inner-container/' );
 	register_block_type( plugin_dir_path( __FILE__ ) . 'blocks/bubble-quote/' );
 
-	function render_cjd_blocks_bubble_tail( $block_attributes, $content, $block ) {
+	function render_cjd_blocks_bubble_quote_tail( $block_attributes, $content, $block ) {
 
             	$style = isset( $block->context['cjd-blocks/tailColor'] ) ?
             		'color: var(--wp--preset--color--' . $block->context['cjd-blocks/tailColor'] . ')' :
@@ -55,7 +57,7 @@ function cjd_blocks_bubble_quote_block_init() {
             		'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 7" width="48px" height="48px"><path d="M9.5 0H0C6.7 3 9.5 7 9.5 7S12.3 3 19 0Z"/></svg>' :
             		'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.5 12.9" width="48px" height="34px" className="speech-bubble-tail"><path d="M0.5 0c0.4 1.8 0.6 3.6 0.6 5.5 0 2.6-0.4 5.1-1 7.4C8.1 12.2 14.9 7.1 18.5 0H0.5z"/></svg>';
 
-            	return '<div class="bubble-tail ' . $class . '" style="' . $style . '" />' . $icon . '</div>';
+            	return '<div class="wp-block-cjd-blocks-bubble-quote-tail ' . $class . '" style="' . $style . '" />' . $icon . '</div>';
             }
 
 

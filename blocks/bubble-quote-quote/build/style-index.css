@@ -1,0 +1,23 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-cjd-blocks-bubble-quote-quote {
+  flex-grow: 1;
+  height: 100%;
+  padding: var(--wp--custom--spacing--vertical) var(--wp--custom--spacing--horizontal);
+}
+.wp-block-cjd-blocks-bubble-quote-quote p {
+  max-width: 40rem;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-block-cjd-blocks-bubble-quote-quote p:last-of-type {
+  margin-bottom: 0;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
