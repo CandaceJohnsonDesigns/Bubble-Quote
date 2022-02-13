@@ -256,7 +256,9 @@ function BubbleQuoteEdit({
     align
   } = attributes;
   const ALLOWED_BLOCKS = ['cjd-blocks/bubble-quote-inner-container', 'cjd-blocks/bubble-quote-citation'];
-  const TEMPLATE = [['cjd-blocks/bubble-quote-inner-container', {}], ['cjd-blocks/bubble-quote-citation', {}]];
+  const TEMPLATE = [['cjd-blocks/bubble-quote-inner-container', {
+    className: 'is-style-drop-shadow'
+  }], ['cjd-blocks/bubble-quote-citation', {}]];
   const className = classnames__WEBPACK_IMPORTED_MODULE_1___default()({
     [`has-text-align-${align}`]: align
   });

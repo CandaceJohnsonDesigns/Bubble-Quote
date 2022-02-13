@@ -48,7 +48,7 @@ import { BlockQuote } from './blockquote';
 	const ALLOWED_BLOCKS = [ 'cjd-blocks/bubble-quote-inner-container', 'cjd-blocks/bubble-quote-citation' ];
 
 	const TEMPLATE = [
-		[ 'cjd-blocks/bubble-quote-inner-container', { } ],
+		[ 'cjd-blocks/bubble-quote-inner-container', { className: 'is-style-drop-shadow' } ],
 		[ 'cjd-blocks/bubble-quote-citation', {} ]
 	];
 

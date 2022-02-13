@@ -27,9 +27,9 @@
 		{
 			"name": "default",
 			"label": "Default",
-			"isDefault": true
+		  	"isDefault": true
 		},
-		{ "name": "drop-shadow", "label": "Drop Shadow"}
+		{ "name": "drop-shadow", "label": "Drop Shadow" }
 	],
 	"textdomain": "cjd-blocks-quote-container",
 	"editorScript": "file:./build/index.js",
