@@ -14,9 +14,13 @@
     	margin: 0;
     }
 
-    // Aligns citation to tail
+    // Aligns citation to tail when present; otherwise, prevents tail collapse
     .wp-block-cjd-blocks-bubble-quote & {
     	margin-bottom: 8px;
+
+    	&:only-child {
+        	margin-bottom: 34px;
+        }
     }
 
 	&.is-style-drop-shadow {

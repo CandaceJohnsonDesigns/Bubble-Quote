@@ -21,7 +21,9 @@
 
 	 return (
 		 <>
+		 	{ citation && (
 			<RichText.Content { ...blockProps } tagName="cite" value={ citation } />
+			) }
 		 </>
 	 );
  }
